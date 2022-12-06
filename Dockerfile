@@ -4,6 +4,7 @@ WORKDIR  hellojar
 RUN mvn clean
 RUN mvn compile
 RUN mvn package
+RUN mvn install
 WORKDIR  target/
 CMD ["java","-jar","helloExample1-0.0.1-SNAPSHOT.jar"]
 #ENTRYPOINT ["tail","-f","/dev/null"]
