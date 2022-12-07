@@ -17,6 +17,6 @@ jobs:
     - name: Scripts
       run: |
         docker build -t maven .
-        docker tag maven bhanunr/admin-micro:v7
+        docker tag maven bhanunr/admin-micro:v8
         docker login -u bhanunr -p dckr_pat_XHyVfeEqySijJLUXT1Vd8BXYmSM 
-        docker push bhanunr/admin-micro:v7
+        docker push bhanunr/admin-micro:v8
